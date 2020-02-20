@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AB2 - Amoledify</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="icon" type="image/png" href="static/images/favicon.png">
+</head>
+<body>
+  <div class="container">
+    <div style="margin-top: 5%">
+      <h2 style="text-align:center">Amoledify</h2>
+      <h4 style="text-align:center">Convert images to their amoled form by making their backgrounds "true black"</h4>
+    </div>
+    <div class="row">
+      <p>Image must be less than {{maxMB}}MB and of the following file types: {{fileTypes}}</p>
+      <form method="POST" enctype="multipart/form-data" onchange=submit()>
+        <div>
+          {{form.hidden_tag()}}
+          {{form.photo()}}
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
